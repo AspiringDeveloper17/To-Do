@@ -21,9 +21,7 @@ export default class Home  extends Component {
     constructor(props) {
       super(props);
       this.tasksRef = firebaseRef.database().ref();
-      const dataSource = new ListView.DataSource({
-        rowHasChanged: (row1, row2) => row1 !== row2,
-      });
+      const dataSource = new ListView.DataSource({rowHasChanged: (row1, row2) => row1 !== row2});
       this.state = {
         dataSource: dataSource,
         newTask: "Enter Item"
@@ -57,9 +55,7 @@ export default class Home  extends Component {
     }
 
     _renderItem(task) {
-      // a method for building each list item
       const onTaskCompletion = () => {
-        // removes the item from the list
         this.tasksRef.child(task._key).remove()
       };
       return (
