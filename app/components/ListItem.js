@@ -11,7 +11,6 @@ import {
 
 export default class ListItem extends Component {
   render() {
-    // We are going to return a simple list item with just a title for now
     return (
       <View style={styles.listItem}>
         <Text style={styles.listItemTitle}>{this.props.task.name}</Text>
