@@ -8,6 +8,7 @@ import {Scene,Router} from 'react-native-router-flux';
 import Login from './components/login';
 import Register from './components/register';
 import Home from './components/home';
+import Create from './components/create';
 
 export default class Main extends Component{
   render(){
@@ -16,7 +17,8 @@ export default class Main extends Component{
         <Scene key="root" >
         <Scene key="login" component={Login} title="Login Mate" />
         <Scene key="register" component={Register} title="Register Mate"/>
-        <Scene key="home" component={Home} title="To-do List"  initial/>
+        <Scene key="home" component={Home} title="Slap Channel" renderBackButton={()=>(null)} initial/>
+        <Scene key="post" component={Create} />
         </Scene>
       </Router>
 

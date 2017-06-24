@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Executors/RCTJSCExecutor.mm \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/shubhsinha/Auth/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/shubhsinha/Auth/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/shubhsinha/Auth/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTJSCErrorHandling.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Profiler/RCTJSCProfiler.h \
+  /Users/shubhsinha/Auth/node_modules/react-native/React/Modules/RCTDevMenu.h

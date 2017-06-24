@@ -18,12 +18,23 @@ export default class Login extends Component{
   constructor(props){
     super(props);
     this.state={
-      username:"Enter Email",
-      password:"Enter Password"
+      username:"",
+      password:""
     };
     this.onPress=this.onPress.bind(this);
     this.onCreatePress=this.onCreatePress.bind(this);
     this.onForgotPress=this.onForgotPress.bind(this);
+  }
+  componentDidMount(){
+    firebaseRef.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    Actions.home();
+    // User is signed in.
+  }
+  else {
+    Actions.login();
+  }
+});
   }
   render(){
     return(
@@ -41,6 +52,8 @@ export default class Login extends Component{
          clearTextOnFocus={true}
          onChangeText={(username)=> this.setState({username})}
          autoCapitalize={"none"}
+         placeholder={"Enter Email"}
+         placeholderTextColor={"black"}
          />
       </View>
       <View>
@@ -50,6 +63,8 @@ export default class Login extends Component{
           clearTextOnFocus={true}
           onChangeText={(password)=> this.setState({password})}
           autoCapitalize={"none"}
+          placeholder={"Enter Password"}
+          placeholderTextColor={"black"}
           />
       </View>
       <View>
@@ -80,8 +95,7 @@ export default class Login extends Component{
     );
   }
   onPress(){
-    //test@gmail.com
-    //sunshine
+
     firebaseRef.auth().signInWithEmailAndPassword(this.state.username, this.state.password).then(function(success) {
       if(success){
         console.log(success);

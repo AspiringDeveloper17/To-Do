@@ -16,9 +16,9 @@ export default class Register extends Component{
   constructor(props){
     super(props);
     this.state={
-      username:"Enter Email",
-      password:"Enter Password",
-      verify:"Enter Password Again"
+      username:"",
+      password:"",
+      verify:""
     };
     this.onPress=this.onPress.bind(this);
   }
@@ -38,26 +38,34 @@ export default class Register extends Component{
          clearTextOnFocus={true}
          onChangeText={(username)=> this.setState({username})}
          autoCapitalize={"none"}
+         placeholder={"Enter Email"}
+         placeholderTextColor={"black"}
          />
       </View>
       <View>
         <TextInput
           value={this.state.password}
+          secureTextEntry={true}
           style={styles.password}
           clearTextOnFocus={true}
           onChangeText={(password)=> this.setState({password})}
           autoCapitalize={"none"}
           autoCorrect={false}
+          placeholder={"Enter Password"}
+          placeholderTextColor={"black"}
           />
       </View>
       <View>
         <TextInput
           value={this.state.verify}
+          secureTextEntry={true}
           onChangeText={(verify)=> this.setState({verify})}
           style={styles.verify}
           clearTextOnFocus={true}
           autoCapitalize={"none"}
           autoCorrect={false}
+          placeholder={"Enter Password"}
+          placeholderTextColor={"black"}
           />
       </View>
       <View>
